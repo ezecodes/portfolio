@@ -7,6 +7,8 @@
   --dark-slate: rgb(31 41 55);
   --animate-duration: .3s;
   --animate-delay: .3s;
+  --darkgreen: #35d18b;
+  --lightgreen: #92e0bd;
 }
 
 body {
@@ -15,6 +17,15 @@ body {
 
 .nav {
   background-color: var(--dark-slate);
+  height: calc(100vh - 210%);
+}
+
+.bg_green {
+  background-color: var(--darkgreen);
+}
+
+.semifaded_text {
+  color: rgb(87 83 78);
 }
 
 .animate__animated {
