@@ -14,7 +14,7 @@ const links = [
 
 export default function Header () {
 	return (
-		<header className='sticky backdrop-blur-lg z-50 bg-[255,255,555,.2] top-0 flex justify-between relative px-4 py-4'>
+		<header className='sticky backdrop-blur-xl z-50 bg-[255,255,555,.2] top-0 flex justify-between relative px-4 py-4'>
 			<div>
 				LOGO
 			</div>
