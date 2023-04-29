@@ -44,7 +44,7 @@ export default function Home() {
 							<a 
 								href=''
 								download
-								className='flex items-center mr-2 text-center text-white bg_green w-[105px] py-2 px-3 rounded-md'>Resume &nbsp; <FaFileDownload /></a>
+								className='flex items-center justify-center mr-2 text-center text-white bg_green w-[130px] py-2 rounded-md'>Resume &nbsp; <FaFileDownload /></a>
 							
 						</div>
 					</div>
