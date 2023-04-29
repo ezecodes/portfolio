@@ -50,7 +50,7 @@ export default function Home() {
 					</div>
 					<div className='hidden sm:block'>
 						<Image 
-							className='w-[200px] h-[200px]'
+							className='w-full h-[200px]'
 							src={'/undraw_developer_activity_re_39tg.svg'} 
 							width={'360px'}
 							height={'360px'}

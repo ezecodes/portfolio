@@ -21,7 +21,7 @@ export default function Layout ({children}) {
 	}, [router.events])
 
 	return (
-		<section id='layout' className=''>
+		<section id='layout' className=' lg:w-[1000px] mx-[auto]'>
 			{showLoader && 
 				<div className='fixed bottom-[20px] rounded-md px-2 py-2 z-100 bg-neutral-900 right-[10px]'>
 					<LoaderIcon type={"spin"} size={30} color='#000' />
