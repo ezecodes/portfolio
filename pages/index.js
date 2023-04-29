@@ -27,7 +27,7 @@ export default function Home() {
 				<title>jahdevelops</title>
 			</Head>
 
-			<section className='px-5 mt-[2rem]'>
+			<section className='px-5 mt-[2rem]' id='main'>
 				<div className='flex justify-between items-center'>
 					<div className='flex-1 text-center sm:text-left sm:items-start flex flex-col items-center'>
 						<h1 className='text-[1.7rem] font-medium'>Hi all ✋, I am Elijah Eze</h1>
