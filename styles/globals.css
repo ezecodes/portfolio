@@ -11,6 +11,18 @@
   --lightgreen: #92e0bd;
 }
 
+#main > section {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2_header {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 body {
   background-color: var(--light-zinc);
 }
@@ -25,7 +37,7 @@ body {
 }
 
 .semifaded_text {
-  color: rgb(87 83 78);
+  color: rgb(99, 95, 90);
 }
 
 .animate__animated {
