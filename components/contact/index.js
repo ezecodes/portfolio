@@ -1,6 +1,6 @@
 
 function Field({children}) {
-	return <div className="field flex w-full justify-between">
+	return <div className="field flex w-full flex-col sm:flex-row justify-between">
 		{children}
 	</div>
 }
