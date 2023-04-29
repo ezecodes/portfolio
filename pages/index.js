@@ -6,7 +6,7 @@ import { FaDownload, FaFileDownload, FaGithub, FaLinkedin, FaWhatsapp } from "re
 import { AiFillGoogleCircle, AiOutlineDownload, AiOutlineWhatsApp } from "react-icons/ai";
 
 function Social({children, href}) {
-	return <a href={href} target='_blank' className='block mr-2 text-[1.8rem]' >{children}</a>
+	return <a href={href}  rel="noreferrer" target='_blank' className='block mr-2 text-[1.8rem]' >{children}</a>
 }
 
 const ContactForm = dynamic(() => import('../components/contact'))
