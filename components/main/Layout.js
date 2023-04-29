@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, createRef } from 'react'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
+import { CSSTransition } from 'react-transition-group';
 import LoaderIcon from "react-loader-icon";
 import { useRouter } from 'next/router'
 
@@ -20,14 +21,14 @@ export default function Layout ({children}) {
 	}, [router.events])
 
 	return (
-		<section id='layout' className='bg-zinc-50'>
+		<section id='layout' className=''>
 			{showLoader && 
-				<div className=''>
-					<LoaderIcon type={"spin"} size={30} color='#fff' />
+				<div className='fixed bottom-[20px] rounded-md px-2 py-2 z-100 bg-neutral-900 right-[10px]'>
+					<LoaderIcon type={"spin"} size={30} color='#000' />
 				</div>
 			}
 			<Header />
-				{children}
+			{children}
 			<Footer />
 		</section>
 	)
