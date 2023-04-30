@@ -1,4 +1,4 @@
-import { FaBookOpen, FaGithubAlt, FaWindowMaximize } from "react-icons/fa"
+import { FaBookOpen, FaGithubAlt } from "react-icons/fa"
 
 function ProjectCard({name, description, img, url, type}) {
 	return (
@@ -44,22 +44,22 @@ const projects = [
 		},
 		type: 'public',
 		url: 'https://github.com/jahdevelops'
-	}
+	},
 ]
 
 export default function () {
 	return (
 		<section id="projects">
-				<h2 className="h2_header"> <span>Projects</span> </h2>
-				<div className="flex justify-between flex-col sm:flex-row">
-					{
-						projects.map((item, i) => {
-							return (
-								<ProjectCard key={i} {...item} />
-							)
-						})
-					}
-				</div>
+			<h2 className="h2_header"> <span>Projects</span> </h2>
+			<div className="grid grid-cols-1 row-span-1	gap-3.5 sm:grid-cols-2">
+				{
+					projects.map((item, i) => {
+						return (
+							<ProjectCard key={i} {...item} />
+						)
+					})
+				}
+			</div>
 		</section>
 	)
 }
