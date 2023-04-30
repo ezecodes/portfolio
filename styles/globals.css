@@ -18,12 +18,38 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: var(--calculated_height);
+  margin-bottom: 5rem;
+  height: auto;
+  margin-top: 2rem;
+}
+@media (min-height: 530px) {
+  #main > section {
+    height: var(--calculated_height);
+  }
+  #main > section:first-child {
+    margin-top: 0;
+  }
 }
 
 .h2_header {
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h2_header::before, .h2_header::after {
+  content: '';
+  background-color: #c5c5c557;
+  height: 2px;
+  flex: 1;
+}
+.h2_header span {
   font-size: 1.4rem;
   font-weight: 500;
+  margin: 0 2rem;
 }
 #contact_form .field textarea {
   resize: vertical;
@@ -41,6 +67,18 @@
 
 #contact_form .field input:first-child {
   margin-right: 5px;
+}
+
+#projects .project_card:first-child {
+  margin-right: 0;
+}
+.project_card .card_link {
+  border-width: 2px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
 }
 
 body {
@@ -98,4 +136,14 @@ nav a {
   color: #d1d1d1;
   margin-right: 5px;
   transition: all ease 100ms;
+}
+
+@media (min-width: 640px) {
+  #main > section {
+    margin-bottom:0;
+    margin-top: 0;
+  }
+  #projects .project_card:first-child {
+    margin-right: 1rem;
+  }
 }
