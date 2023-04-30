@@ -13,7 +13,7 @@ export default function ({links}) {
     return (
     <div id='mobileNav' className=' relative flex flex-col sm:hidden'>
         <div className='self-end' onClick={handleNav}>
-            <AiOutlineMenu className='text-[26px] cursor-pointer' />
+            <AiOutlineMenu className='text-[26px] text-black cursor-pointer' />
         </div>
         <CSSTransition
 			in={showNav}
