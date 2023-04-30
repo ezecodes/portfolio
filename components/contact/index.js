@@ -15,16 +15,17 @@ export default function () {
 			<h2 className="h2_header"> Contact me </h2>
 			<form className="" id="contact_form">
 				<legend className="semifaded_text"> Feel free, leave me a message lets discuss your next project together. </legend>
-				<fieldset className="mt-5">
+				<fieldset className="my-5">
 					<Field>
 						<Input type="text" placeholder="Name" required />
 						<Input type="email" placeholder="Email" required />
 					</Field>
 					<Field>
-						<textarea>
-							Leave me a message
-						</textarea>
+						<textarea defaultValue='Leave me a message' />
 					</Field>
+				</fieldset>
+				<fieldset>
+					<Field><button className="bg_green text-white w-[100px] py-2 rounded-md">Submit</button></Field>
 				</fieldset>
 			</form>
 		</section>
