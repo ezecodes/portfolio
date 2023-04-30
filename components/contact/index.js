@@ -12,7 +12,7 @@ function Input(props) {
 export default function () {
 	return (
 		<section id="contact">
-			<h2 className="h2_header"> Contact me </h2>
+			<h2 className="h2_header"> <span>Contact me</span> </h2>
 			<form className="" id="contact_form">
 				<legend className="semifaded_text"> Feel free, leave me a message lets discuss your next project together. </legend>
 				<fieldset className="my-5">
@@ -21,7 +21,7 @@ export default function () {
 						<Input type="email" placeholder="Email" required />
 					</Field>
 					<Field>
-						<textarea defaultValue='Leave me a message' />
+						<textarea defaultValue='Your message here' />
 					</Field>
 				</fieldset>
 				<fieldset>
