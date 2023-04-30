@@ -8,6 +8,7 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 const links = [
 	{link: 'home', icon: <AiFillHome />},
 	{link: 'projects', icon: <RiGitRepositoryFill />},
+	{link: 'stack', icon: <BsCodeSlash />},
 	{link: 'contact', icon: <BsFillTelephonePlusFill />}
 ]
 
