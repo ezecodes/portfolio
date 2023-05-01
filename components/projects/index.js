@@ -11,9 +11,9 @@ function ProjectCard({name, description, img, url, type, roles = []}) {
 			</div>
 			<div className="flex my-2" title="Role">
 				{ roles.length > 0 &&
-					roles.map(role => {
+					roles.map((role, i) => {
 						return (
-							<span className="mr-3 text-sm bg-green-50 px-2 py-1 text-stone-600">
+							<span key={i} className="mr-3 text-sm bg-green-50 px-2 py-1 text-stone-600">
 								#{role}
 							</span>
 						)
