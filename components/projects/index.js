@@ -53,11 +53,7 @@ export default function () {
 			<h2 className="h2_header"> <span>Projects</span> </h2>
 			<div className="grid grid-cols-1 row-span-1	gap-3.5 sm:grid-cols-2">
 				{
-					projects.map((item, i) => {
-						return (
-							<ProjectCard key={i} {...item} />
-						)
-					})
+					projects.map((item, i) => <ProjectCard key={i} {...item} />)
 				}
 			</div>
 		</section>
