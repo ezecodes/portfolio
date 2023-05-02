@@ -1,18 +1,24 @@
 
-// import { TbBrandTypescript } from "react-icons/tb";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiMysql, SiNextdotjs } from 'react-icons/si'
+import { TbBrandTypescript } from "react-icons/tb";
+import { IoLogoJavascript , IoLogoFirebase} from "react-icons/io";
+import { FaAws, FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiFirebase, SiMysql, SiNextdotjs, SiPostgresql, SiPrisma, SiRemix, SiSequelize } from 'react-icons/si'
 import { DiMongodb } from 'react-icons/di'
 
 const stacks = [
 	['nextjs', <SiNextdotjs className="text-[#00]" />],
-	// ['typescript', <TbBrandTypescript className="text-[#007ACC]" />],
+	['typescript', <TbBrandTypescript className="text-[#007ACC]" />],
 	['javascript', <IoLogoJavascript className="text-[#F7DF1E]" />],
 	['reactjs', <FaReact className="text-[#61DAFB]" />],
 	['nodejs', <FaNodeJs className="text-[#43853d]"/>],
 	['sql', <SiMysql className="text-[#00758F]" />],
-	['mongodb', <DiMongodb className='text-[#4DB33D]' />]
+	['mongodb', <DiMongodb className='text-[#4DB33D]' />],
+	// ['prisma', <SiPrisma className='text-[#1B222D]' />],
+	// ['remix', <SiRemix className='text-[#4E3FB4]'/>],
+	// ['firebase', <SiFirebase className='text-[#FFCA28]' />],
+	// ['aws', <FaAws className='text-[#FF9900]' />],
+	// ['sequelize', <SiSequelize className='text-[#52B0E7]' />],
+	// ['Postgresql', <SiPostgresql className='text-[#336791]' />],
 ]
 
 export default function () {
