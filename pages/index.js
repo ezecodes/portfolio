@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import useScrollSnap from 'react-use-scroll-snap';
 
 import { FaDownload, FaFileDownload, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { AiFillGoogleCircle, AiOutlineDownload, AiOutlineWhatsApp } from "react-icons/ai";
-import { useEffect, useRef } from 'react';
 
 function Social({children, href}) {
 	return <a href={href}  rel="noreferrer" target='_blank' className='duration-200 hover:zoom-[10] block mr-2 text-[1.8rem]' >{children}</a>
@@ -16,10 +14,6 @@ const Projects = dynamic(() => import('../components/projects'))
 const Stack = dynamic(() => import('../components/stack'))
 
 export default function Home() {
-	const scrollRef = useRef(null)
-	
-
-	
 
 	return (
 		<main>
@@ -34,7 +28,7 @@ export default function Home() {
 				<title>jahdevelops</title>
 			</Head>
 
-			<section className='px-[1rem]' id='main' ref={scrollRef}>
+			<section className='px-[1rem]' id='main' >
 				<section>
 					<div className='flex justify-between items-center'>
 						<div className='flex-1 mb-[1rem] sm:mr-[2rem] text-center sm:text-left sm:items-start flex flex-col items-center'>
