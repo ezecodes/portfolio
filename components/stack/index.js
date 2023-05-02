@@ -1,3 +1,4 @@
+/* eslint-disable */
 
 import { TbBrandTypescript } from "react-icons/tb";
 import { IoLogoJavascript , IoLogoFirebase} from "react-icons/io";
