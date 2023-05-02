@@ -17,11 +17,9 @@ const Stack = dynamic(() => import('../components/stack'))
 
 export default function Home() {
 	const scrollRef = useRef(null)
-	const index = useScrollSnap({ ref: scrollRef, duration: 3000, delay: 50 });
+	
 
-	useEffect(() => {
-		console.log(index)
-	}, [index])
+	
 
 	return (
 		<main>
