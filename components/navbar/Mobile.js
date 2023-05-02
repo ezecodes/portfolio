@@ -27,7 +27,7 @@ export default function ({links}) {
 	        }}
 	        unmountOnExit
 		>
-            <nav ref={ref} className='absolute pt-5 nav flex flex-col right-[-15px] h-[100vh] top-[160%] w-[250px]'>
+            <nav ref={ref} className='absolute pt-5 nav flex flex-col right-[-16px] h-[100vh] top-[160%] w-[250px]'>
                 
                 {
                     links.map((link, i) => {
