@@ -14,7 +14,7 @@ export default function () {
 		<section id="contact">
 			<h2 className="h2_header"> <span>Contact me</span> </h2>
 			<form className="" id="contact_form">
-				<legend className="semifaded_text"> Feel free, leave me a message lets discuss your next project together. </legend>
+				<legend className="semifaded_text text-center"> Feel free, leave me a message lets discuss your next project together. </legend>
 				<fieldset className="my-5">
 					<Field>
 						<Input type="text" placeholder="Name" required />
