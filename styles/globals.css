@@ -126,12 +126,12 @@ body {
   width: 100%;
 } */
 .project_card .card_link {
-  border-width: 2px;
   width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3px 10px;
+  font-size: 13px;
 }
 
 body {
