@@ -1,11 +1,18 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import NavLink from './NavLink'
 import { AiOutlineMenu, AiOutlineArrowRight } from "react-icons/ai";
 import { CSSTransition } from 'react-transition-group';
+import { useRouter } from 'next/router';
 
 export default function ({links}) {
     const [showNav, setNav] = useState(false)
     const ref = useRef(null)
+
+    const router = useRouter()
+
+	useEffect(() => {
+		setNav(false)
+	}, [router.asPath])
 
     function handleNav() {
         setNav(prev => !prev)
