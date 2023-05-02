@@ -1,2 +1,1 @@
-
-extjs, tailwind and mysql database.
+Portfolio site built with Nextjs, Tailwind
