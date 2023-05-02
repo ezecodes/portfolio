@@ -27,6 +27,16 @@ body {
   --fadedgray: rgb(99, 95, 90);
   --calculated_height: auto; 
 }
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
 
 #main {
   scroll-snap-type: x mandatory;
