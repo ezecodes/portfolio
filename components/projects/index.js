@@ -1,24 +1,36 @@
 import { FaBookOpen, FaGithubAlt } from "react-icons/fa"
+import { MdOpenInNew} from "react-icons/md"
 
-function ProjectCard({name, description, img, url, type}) {
+function ProjectCard({name, description, img, url, type, roles = []}) {
 	return (
-		<div className="project_card flex justify-center flex-col h-[350px] sm:mr-0 px-5 shadow-md mb-[2rem] ">
+		<div className={`border-2 border-[rgba(0,0,0,.1)] project_card flex justify-center flex-col h-[350px] sm:mr-0 px-5 shadow-md mb-[2rem] `}>
 			<div> <img src={img.url} /> </div>
 			<div className="mt-5">
-				<h3 className="text-lg mb-2 font-semibold">{name}</h3>
-				<p className="semifaded_text">{description}</p>
+				<h3 className="text-md mb-2 font-semibold">{name}</h3>
+				<p className="semifaded_text text-[.9rem]">{description}</p>
 			</div>
-			<div className="mt-3">
+			<div className="flex my-2" title="Role">
+				{ roles.length > 0 &&
+					roles.map(role => {
+						return (
+							<span className="mr-3 text-sm bg-green-50 px-2 py-1 text-stone-600">
+								#{role}
+							</span>
+						)
+					})
+				}
+			</div>
+			<div className="mt-1 flex justify-end">
 				{
 					type === 'public' ?
-					<a href={url} rel="noreferrer" target="_blank" className="card_link border-[#ffd2bb]" >
+					<a href={url} rel="noreferrer" target="_blank" className="card_link" >
 						<FaGithubAlt className="text-[#ff9056]" />
-						<span className="ml-3 text-[#ff9056]"> View on Github </span>
+						<span className="ml-3 text-[#ff9056]"> View Code </span>
 					</a>
 					:
-					<a href={url} rel="noreferrer" target="_blank" className="card_link border-[#868593]" >
+					<a href={url} rel="noreferrer" target="_blank" className="card_link" >
 						<span className="mr-3 text-[#3f3d56]"> Open </span>
-						<FaBookOpen className="text-[#3f3d56]" />
+						<MdOpenInNew className="text-[#3f3d56]" />
 					</a>
 				}
 			</div>
@@ -33,17 +45,29 @@ const projects = [
 		img: {
 			url: '/project_thumbnails/mobipay.png'
 		},
+		roles: ['lead developer'],
 		type: 'private',
 		url: 'https://gomobidata.com'
 	},
 	{
-		name: 'mobipay',
-		description: 'A financial application used by company investors to give out and receive money from prospective customers.',
+		name: 'obinwosu',
+		description: 'A campaign website',
 		img: {
-			url: '/project_thumbnails/mobipay.png'
+			url: '/project_thumbnails/obi.png'
+		},
+		type: 'private',
+		roles: ['lead developer'],
+		url: 'https://obinwosu.onrender.com'
+	},
+	{
+		name: 'Portfolio',
+		description: 'My personal portfolio site',
+		img: {
+			url: '/project_thumbnails/portfolio.png'
 		},
 		type: 'public',
-		url: 'https://github.com/jahdevelops'
+		roles: ['lead developer'],
+		url: 'https://github.com/jahdevelops/portfolio'
 	},
 ]
 
