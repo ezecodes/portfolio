@@ -66,7 +66,7 @@ const projects = [
 			url: '/project_thumbnails/portfolio.png'
 		},
 		type: 'public',
-		roles: ['lead developer'],
+		roles: ['lead developer', 'ui/ux designer'],
 		url: 'https://github.com/jahdevelops/portfolio'
 	},
 ]
