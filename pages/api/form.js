@@ -4,7 +4,7 @@ dotenv.config()
 
 const client = new SMTPClient({
     user: process.env.mailAddress,
-    password: process.env.mailPass,
+    password: process.env.mailPass, // This is the app-password generated on google account and not the gmail password
     host: 'smtp.gmail.com',
     ssl: true
 })
