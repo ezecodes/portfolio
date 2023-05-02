@@ -106,7 +106,7 @@ body {
 
 .nav {
   background-color: var(--dark-slate);
-  height: var(--calculated_height);
+  height: 90vh;
 }
 
 .bg_green {
