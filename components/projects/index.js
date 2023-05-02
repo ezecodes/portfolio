@@ -9,7 +9,7 @@ function ProjectCard({name, description, img, url, type, roles = []}) {
 				<h3 className="text-md mb-2 font-semibold">{name}</h3>
 				<p className="semifaded_text text-[.9rem]">{description}</p>
 			</div>
-			<div className="flex my-2" title="Role">
+			<div className="flex flex-wrap my-2" title="Role">
 				{ roles.length > 0 &&
 					roles.map((role, i) => {
 						return (
