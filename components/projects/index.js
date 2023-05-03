@@ -3,7 +3,7 @@ import { MdOpenInNew} from "react-icons/md"
 
 function ProjectCard({name, description, img, url, type, roles = []}) {
 	return (
-		<div className={`border-2 border-[rgba(0,0,0,.1)] project_card flex justify-center flex-col h-[350px] sm:mr-0 px-5 shadow-md mb-[2rem] `}>
+		<div className={`border-2 border-[rgba(0,0,0,.1)] project_card flex justify-center flex-col h-[350px] w-[300px] sm:w-[300px] sm:mr-0 px-5 shadow-md mb-[2rem] `}>
 			<div> <img src={img.url} /> </div>
 			<div className="mt-5">
 				<h3 className="text-md mb-2 font-semibold">{name}</h3>
@@ -75,6 +75,7 @@ export default function () {
 	return (
 		<section id="projects">
 			<h2 className="h2_header"> <span>Projects</span> </h2>
+			<p className="semifaded_text">Here is a selection of my recent projects that demonstrate my technical skills and problem-solving abilities.</p>
 			<div className="grid grid-cols-1 row-span-1	gap-3.5 sm:grid-cols-2">
 				{
 					projects.map((item, i) => <ProjectCard key={i} {...item} />)
