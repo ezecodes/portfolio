@@ -11,25 +11,25 @@ function Field({children}) {
 export default function () {
 	const nameRef = useRef(null)
 	const emailRef = useRef(null)
-	const msgRef = useRef(null)
+	const messageRef = useRef(null)
 	const [disabled, setButtonState] = useState(false)
 
 	function handleForm(e) {
 		e.preventDefault()
-		const [email, name, msg] = [emailRef.current.value, nameRef.current.value, msgRef.current.value]
+		const [email, name, message] = [emailRef.current.value, nameRef.current.value, messageRef.current.value]
 		setButtonState(true)
 		fetch('/api/form', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify({email, name, msg})
+			body: JSON.stringify({email, name, message})
 		})
 		.then(res => {
 			toast.success('Message received.')
 			emailRef.current.value = ''
 			nameRef.current.value = ''
-			msgRef.current.value = ''
+			messageRef.current.value = ''
 		})
 		.catch(err => {
 			console.error(err)
@@ -58,7 +58,7 @@ export default function () {
 						<input type="email" placeholder="Email" required ref={emailRef} />
 					</Field>
 					<Field>
-						<textarea placeholder='Your message here' ref={msgRef} />
+						<textarea placeholder='Your message here' ref={messageRef} />
 					</Field>
 				</fieldset>
 				<fieldset>
