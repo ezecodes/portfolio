@@ -21,6 +21,7 @@
     "dotenv": "^16.0.3",
     "emailjs": "^4.0.1",
     "isemail": "^3.2.0",
+    "lodash": "^4.17.21",
     "next": "^12.2.5",
     "nextjs-cors": "^2.1.1",
     "nuka-carousel": "^6.0.2",
