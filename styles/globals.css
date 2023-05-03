@@ -68,7 +68,7 @@ body {
   }
 } */
 .stack:hover span:last-of-type {
-  font-size: 1.3rem;
+  font-size: .95em;
   color: #000;
 }
 .stack span:last-of-type {
@@ -81,9 +81,14 @@ body {
   font-size: 4rem;
 }
 
-.h2_header + p{
+.h2_header + p {
+  margin-bottom: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto ;
   text-align: center;
 }
+
 .h2_header {
   margin-bottom: 1rem;
   display: flex;
@@ -146,6 +151,13 @@ body {
 .bg_green {
   background-color: var(--darkgreen);
 }
+.bg_lightgreen {
+  background-color: var(--lightgreen);
+}
+
+.Toastify__toast-body div {
+  text-transform: capitalize;
+}
 
 .semifaded_text {
   color: var(--fadedgray);
@@ -196,4 +208,8 @@ nav a {
     /* margin-bottom:0;
     margin-top: 0; */
   }
+  .h2_header + p {
+    /* width: 500px; */
+  }
+
 }
