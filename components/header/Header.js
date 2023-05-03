@@ -14,17 +14,9 @@ export default function Header () {
 		{link: 'contact', icon: <BsFillTelephonePlusFill />, active: false}
 	])
 
-	const router = useRouter()
-
-	useEffect(() => {
-		console.log(router.asPath)
-	}, [router.asPath])
-
 	return (
 		<header className='sticky backdrop-blur-xl z-50 bg-[#3f3d5605] top-0 flex justify-between relative px-4 py-4'>
-			<div>
-				{'</>'}
-			</div>
+			<div></div>
 			<DesktopNav links={links} />
 			<MobileNav links={links} />
 		</header>
