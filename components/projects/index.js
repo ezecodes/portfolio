@@ -13,7 +13,7 @@ function ProjectCard({name, description, img, url, type, roles = []}) {
 				{ roles.length > 0 &&
 					roles.map((role, i) => {
 						return (
-							<span key={i} className="mr-3 text-sm bg-green-50 px-2 py-1 text-stone-600">
+							<span key={i} className="mr-3 mb-1 text-sm bg-green-50 px-2 py-1 text-stone-600">
 								#{role}
 							</span>
 						)
