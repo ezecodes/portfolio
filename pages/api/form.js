@@ -52,7 +52,7 @@ function handleUserForm(req, res) {
             console.log(data)
             res.status(200).json({
                 success: true,
-                msg: 'Your form has been sent'
+                message: 'Your form has been sent'
             })
         })
     }
