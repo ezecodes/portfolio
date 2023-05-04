@@ -26,7 +26,7 @@ export default function () {
 	return (
 		<section id="stack">
 			<h2 className="h2_header"> <span>Tech stack</span> </h2>
-			<p className="semifaded_text">These are the plethora of languages and frameworks I have used throughout my programming career.</p>
+			{/* <p className="semifaded_text">These are the plethora of languages and frameworks I have used throughout my programming career.</p> */}
 			<div className="grid grid-cols-4 row-span-1	gap-4 sm:grid-cols-8 mt-5 ">
 				{
 					stacks.map((stack, i) => {
