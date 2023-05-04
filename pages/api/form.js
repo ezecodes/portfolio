@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 import _ from 'lodash'
+import isEmail from 'isemail'
 
 const client = new SMTPClient({
     user: process.env.mailAddress,
@@ -19,6 +20,12 @@ export default async function parseMiddleware(req, res) {
             message: 'Please fill in your form'
         })
     } 
+    if (!isEmail.validate(email)) {
+        return res.status(400).json({
+            success: false,
+            message: 'Email address is invalid'
+        })
+    }
     handleUserForm(req, res)
 }
 
@@ -38,7 +45,8 @@ function handleUserForm(req, res) {
             if (err) {
                 console.error(err)
                 return res.status(500).json({
-                    success: false
+                    success: false,
+                    message: 'Something went wrong'
                 })
             }
             console.log(data)
