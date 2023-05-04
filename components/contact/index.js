@@ -25,16 +25,28 @@ export default function () {
 			},
 			body: JSON.stringify({email, name, message})
 		})
-		.then(res => {
-			toast.success('Message received.')
-			emailRef.current.value = ''
-			nameRef.current.value = ''
-			messageRef.current.value = ''
+		.then(async res => {
+			let jsonResponse
+			if (res.status === 200) {
+				jsonResponse = await res.json()
+				toast.success(jsonResponse.message)
+				emailRef.current.value = ''
+				nameRef.current.value = ''
+				messageRef.current.value = ''
+			}
+			if (res.status === 500 || res.status === 400) {
+				jsonResponse = await res.json()
+				toast.error(jsonResponse.message)
+			}
+			
 		})
 		.catch(err => {
 			console.error(err)
 		})
-		.finally(() => setButtonState(false))
+		.finally(() => {
+			setButtonState(false)
+			
+		})
 	}
 	return (<>
 		<ToastContainer
