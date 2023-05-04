@@ -26,16 +26,14 @@ export default function () {
 			body: JSON.stringify({email, name, message})
 		})
 		.then(async res => {
-			let jsonResponse
+			let jsonResponse = await res.json()
 			if (res.status === 200) {
-				jsonResponse = await res.json()
 				toast.success(jsonResponse.message)
 				emailRef.current.value = ''
 				nameRef.current.value = ''
 				messageRef.current.value = ''
 			}
 			if (res.status === 500 || res.status === 400) {
-				jsonResponse = await res.json()
 				toast.error(jsonResponse.message)
 			}
 			
