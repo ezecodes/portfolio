@@ -3,13 +3,13 @@ import { MdOpenInNew} from "react-icons/md"
 
 function ProjectCard({name, description, img, url, type, roles = []}) {
 	return (
-		<div className={`border-2 border-[rgba(0,0,0,.1)] project_card flex justify-center flex-col h-[350px] w-[300px] sm:w-[300px] sm:mr-0 px-5 shadow-md mb-[2rem] `}>
+		<div className={`hover:shadow-lg shadow-[0px_0px_8px_1px_#00000024] duration-300 hover:scale-105 project_card flex justify-center flex-col h-[350px] w-[300px] sm:w-[300px] sm:mr-0 px-5 shadow-md mb-[2rem] `}>
 			<div> <img src={img.url} /> </div>
 			<div className="mt-5">
-				<h3 className="text-md mb-2 font-semibold">{name}</h3>
+				<h3 className="text-[.9rem] mb-2 font-semibold">{name}</h3>
 				<p className="semifaded_text text-[.9rem]">{description}</p>
 			</div>
-			<div className="flex flex-wrap my-2" title="Role">
+			{/* <div className="flex flex-wrap my-2" title="Role">
 				{ roles.length > 0 &&
 					roles.map((role, i) => {
 						return (
@@ -19,7 +19,7 @@ function ProjectCard({name, description, img, url, type, roles = []}) {
 						)
 					})
 				}
-			</div>
+			</div> */}
 			<div className="mt-1 flex justify-end">
 				{
 					type === 'public' ?
@@ -51,7 +51,7 @@ const projects = [
 	},
 	{
 		name: 'obinwosu',
-		description: 'A campaign website',
+		description: 'A campaign website.',
 		img: {
 			url: '/project_thumbnails/obi.png'
 		},
@@ -61,7 +61,7 @@ const projects = [
 	},
 	{
 		name: 'Portfolio',
-		description: 'My personal portfolio site',
+		description: 'My personal portfolio site.',
 		img: {
 			url: '/project_thumbnails/portfolio.png'
 		},
