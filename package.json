@@ -8,7 +8,7 @@
     "url": "https://github.com/jahdevelops/portfolio.git"
   },
   "scripts": {
-    "dev": "SET NODE_ENV=development && next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
