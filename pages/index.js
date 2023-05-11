@@ -25,7 +25,7 @@ export default function Home() {
 				<meta name="description" content="Eze Elijah, a solutions driven developer." />
 				<meta name="keywords" content="eze elijah, elijah developer, elijah software developer, developer nigeria" />
 				<meta name="author" content="jahdevelops" />
-				<title>jahdevelops</title>
+				<title>Elijah Eze - Software developer</title>
 			</Head>
 
 			<section className='px-[1rem]' id='main' >
